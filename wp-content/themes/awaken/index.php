@@ -20,7 +20,10 @@ get_header(); ?>
 		<h1>ADD YOUR VOICE TO THE NARRITIVE BY CONTRIBUTING TO THE RURAL CHARTER SCHOOL FORUM</h1>
 		<p>Throughout 2016, there has been a series of discussions with rural charter schools and support organizations who identified a number of challenges facing charters in rural communities.  While participants identified a number of consistent, substantive challenges, it was also clear that any effort to address those challenges had to begin by improving communications about and among rural charter schools.  To that end, a variety of organizations have committed to work together as the Rural Charter Schools Forum, and we invite you and your school to learn more about our work. </p>
 	</div>
+
 </div>
+
+<hr>
 
 	<?php 
 		//This is the featured article information that will move to the other template as this is a bit more than the header

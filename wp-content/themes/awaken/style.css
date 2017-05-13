@@ -82,7 +82,7 @@ html {
 }
 
 body {
-  background: white;
+  background: #d3d3d3;
   /* Fallback for when there is no custom background color defined. */
 }
 
@@ -274,9 +274,9 @@ big {
 3.0 Elements
 --------------------------------------------------------------*/
 hr {
-  background-color: #cccccc;
+  background-color: #EB3D00;
   border: 0;
-  height: 1px;
+  height: 2px;
   margin-bottom: 1.5em;
 }
 
