@@ -38,6 +38,35 @@ Awaken is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic,
 12.0 - Media
 	12.1 - Captions
 	12.2 - Galleries
+13.0 - Custom
+
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+13.0 - Custom
+--------------------------------------------------------------*/
+.featureTile{
+  background-color: #232323;
+  text-align: center;
+  min-height: 320px;
+}
+
+.featureIcon{
+  color: #ffffff;
+  padding-top: 20px;
+}
+
+.featureText, .featureLabel{
+  color: #ffffff;
+}
+
+.testimonialRow{
+  background-color: #ED472F;
+
+  /*Remove this after text is placed*/
+  min-height:300px;
+}
+
+
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 1.0 - Reset
@@ -270,6 +299,9 @@ big {
   font-size: 125%;
 }
 
+
+
+
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
@@ -279,6 +311,8 @@ hr {
   height: 2px;
   margin-bottom: 1.5em;
 }
+
+
 
 ul, ol {
   margin: 0 0 1.5em 3em;
@@ -1777,7 +1811,7 @@ a:hover, a:focus, a:active {
 
 .site-footer {
   background: #323232;
-  margin-top: 40px;
+  /*margin-top: 40px;*/
 }
 
 .fr {

@@ -6,6 +6,7 @@
  */
 
 if ( ! function_exists( 'awaken_setup' ) ) :
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -228,10 +229,11 @@ add_action( 'widgets_init', 'awaken_widgets_init' );
  */
 function awaken_scripts() {
 	
-	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '4.4.0' );
+	wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 	wp_enqueue_style( 'bootstrap.css', get_template_directory_uri() . '/css/bootstrap.min.css', array(), 'all' );
 	
+	//This is what is loading style.css
 	wp_enqueue_style( 'awaken-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'awaken-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
@@ -261,7 +263,8 @@ function awaken_fonts_url() {
     $fonts_url = '';
  
     /* Translators: If there are characters in your language that are not
-    * supported by Lora, translate this to 'off'. Do not translate
+    * supported by Lora, translate thcss
+     to 'off'. Do not translate
     * into your own language.
     */
     $source_sans_pro = _x( 'on', 'Source Sans Pro font: on or off', 'awaken' );

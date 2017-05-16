@@ -18,7 +18,7 @@ get_header(); ?>
 <div class="row">
 	<div class="col-xs-12 col-sm-12">
 		<h1>ADD YOUR VOICE TO THE NARRITIVE BY CONTRIBUTING TO THE RURAL CHARTER SCHOOL FORUM</h1>
-		<p>Throughout 2016, there has been a series of discussions with rural charter schools and support organizations who identified a number of challenges facing charters in rural communities.  While participants identified a number of consistent, substantive challenges, it was also clear that any effort to address those challenges had to begin by improving communications about and among rural charter schools.  To that end, a variety of organizations have committed to work together as the Rural Charter Schools Forum, and we invite you and your school to learn more about our work. </p>
+		<p>Throughout 2016, there has been a series of discussions with rural charter schools and support organizations who identified a number of challenges facing charters in rural communities.  While participants identified a number of consistent, substantive challenges, it was also clear that any effort to address those challenges had to begin by improving communications about and among rural charter schools.  To that end, a variety of organizations have committed to work together as the Rural Charter Schools Forum, and we invite you and your school to learn more about our work.</p>
 	</div>
 
 </div>
@@ -33,6 +33,44 @@ get_header(); ?>
 			}
 		}
 	?>
+
+<hr>
+
+<div class="row">
+	<div class="col-xs-12 col-sm-12">
+		<div class="col-xs-12 col-sm-12 col-md-4 background">
+			<div class="col-xs-12 col-md-10 col-md-offset-2 featureTile">
+				<i class="fa fa-handshake-o fa-5x featureIcon" aria-hidden="true"></i>
+				<h2 class="featureLabel">PARTICIPATE</h2>
+				<div class="featureText">
+					The Rural Charter School Forum includes monthly topic-based discussions.  We invite schools and school leaders to participate in the discussion to help bring new solutions to light. 
+				</div>
+			</div>
+
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4 background">
+			<div class="col-xs-12 col-md-10 col-md-offset-1 featureTile">
+				<i class="fa fa-cogs fa-5x featureIcon" aria-hidden="true"></i>
+				<h2 class="featureLabel">RESOURCES</h2>
+				<div class="featureText">
+					RCSF holds a wealth of information to help aid charter schools in rural communities with resources such as monthly discussion topics, featured articles and more! 
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4 background">
+			<div class="col-xs-12 col-md-10  featureTile">
+				<i class="fa fa-connectdevelop fa-5x featureIcon" aria-hidden="true"></i>
+				<h2 class="featureLabel">INFORM</h2>
+				<div class="featureText">
+					The Rural Charter School Forum is successful because of your words. Tell us your story today and help mold the discussion that benefits people just like you! 
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<hr>
+
 <div class="row">
 	<?php is_rtl() ? $rtl = 'awaken-rtl' : $rtl = ''; ?>
 	<div class="col-xs-12 col-sm-12"<?php echo $rtl ?>">
@@ -78,10 +116,18 @@ get_header(); ?>
 		</div><!-- #primary -->
 	</div><!-- .bootstrap cols -->
 
-
 	<div class="col-xs-12 col-sm-6 col-md-4">
 		<?php //get_sidebar(); ?>
 	</div><!-- .bootstrap cols -->
 
 </div><!-- .row -->
+
+<hr>
+
+<!--.testimonialRow-->
+<div class="row">
+	<div class="col-xs-12 col-sm-12 testimonialRow">
+		THIS IS THERE THE TESTIMONIAL WILL GO AND BE PLACED
+	</div>
+</div>
 <?php get_footer(); ?>
