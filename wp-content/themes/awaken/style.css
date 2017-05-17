@@ -47,7 +47,8 @@ Awaken is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic,
 .featureTile{
   background-color: #232323;
   text-align: center;
-  min-height: 320px;
+  min-height: 340px;
+  margin-bottom: 20px;
 }
 
 .featureIcon{
@@ -61,12 +62,39 @@ Awaken is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic,
 
 .testimonialRow{
   background-color: #ED472F;
-
-  /*Remove this after text is placed*/
-  min-height:300px;
+  min-height: 100px;
 }
 
+.firstRowHeader, .firstRowText, .testimonialText, .resourcesButton, .resourcesText{
+  text-align: center;
+}
 
+.resourcesButton{
+  background-color: #232323;
+  padding: 20px;
+  margin-top: 10px;
+}
+.resourcesLink{
+  color: #ffffff;
+}
+
+.testimonialText{
+  color: #ffffff;
+  padding: 30px 10px;
+  font-size: 22px;
+}
+
+.container{
+  background-color: #ffffff;
+}
+
+.footerText{
+  background-color: #232323;
+}
+
+.flex-direction-nav a{
+  color: #ED472F !important;
+}
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 1.0 - Reset
@@ -1772,7 +1800,7 @@ a:hover, a:focus, a:active {
 10.1 Site Main
 --------------------------------------------------------------*/
 .site-branding {
-  min-height: 135px;
+  /*min-height: 135px;*/
 }
 
 .site-title {
@@ -1806,7 +1834,7 @@ a:hover, a:focus, a:active {
 }
 
 .site-header {
-  margin-bottom: 40px;
+  /*margin-bottom: 40px;*/
 }
 
 .site-footer {

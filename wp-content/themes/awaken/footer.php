@@ -11,7 +11,7 @@
 		</div><!-- #content -->
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
-			<div class="container">
+			<div class="container footerText">
 				<div class="row">
 					<div class="footer-widget-area">
 						<div class="col-md-4">
@@ -49,7 +49,7 @@
 
 			<div class="footer-site-info">	
 				<div class="container">
-					<div class="row">
+					<div class="row footerText">
 						<div class="col-xs-12 col-md-6 col-sm-6">
 							<?php $footer_copyright_text = get_theme_mod( 'footer_copyright_text', '' );
 							if( ! empty( $footer_copyright_text ) ) {

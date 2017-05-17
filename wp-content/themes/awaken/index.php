@@ -17,22 +17,23 @@ get_header(); ?>
 
 <div class="row">
 	<div class="col-xs-12 col-sm-12">
-		<h1>ADD YOUR VOICE TO THE NARRITIVE BY CONTRIBUTING TO THE RURAL CHARTER SCHOOL FORUM</h1>
-		<p>Throughout 2016, there has been a series of discussions with rural charter schools and support organizations who identified a number of challenges facing charters in rural communities.  While participants identified a number of consistent, substantive challenges, it was also clear that any effort to address those challenges had to begin by improving communications about and among rural charter schools.  To that end, a variety of organizations have committed to work together as the Rural Charter Schools Forum, and we invite you and your school to learn more about our work.</p>
+		<h1 class="firstRowHeader">WELCOME TO THE RURAL CHARTER SCHOOL COLLABORATIVE!</h1>
+		<p class="firstRowText">Throughout 2016, there has been a series of discussions with rural charter schools and support organizations who identified a number of challenges facing charters in rural communities.  While participants identified a number of consistent, substantive challenges, it was also clear that any effort to address those challenges had to begin by improving communications about and among rural charter schools.  To that end, a variety of organizations have committed to work together as the Rural Charter Schools Collaborative, and we invite you and your school to learn more about our work.</p>
 	</div>
 
 </div>
 
 <hr>
 
-	<?php 
-		//This is the featured article information that will move to the other template as this is a bit more than the header
-		if ( is_front_page() ) {
-			if ( get_theme_mod( 'display_slider', 1 ) == '1' ) {
-				awaken_featured_posts();
-			}
+<?php 
+	//This is the featured article information that will move to the other template as this is a bit more than the header
+	if ( is_front_page() ) {
+		if ( get_theme_mod( 'display_slider', 1 ) == '1' ) {
+			awaken_featured_posts();
 		}
-	?>
+	}
+?>
+
 
 <hr>
 
@@ -43,7 +44,7 @@ get_header(); ?>
 				<i class="fa fa-handshake-o fa-5x featureIcon" aria-hidden="true"></i>
 				<h2 class="featureLabel">PARTICIPATE</h2>
 				<div class="featureText">
-					The Rural Charter School Forum includes monthly topic-based discussions.  We invite schools and school leaders to participate in the discussion to help bring new solutions to light. 
+					The Rural Charter School Collaborative includes monthly topic-based discussions.  We invite schools and school leaders to participate in the discussion to help bring new solutions to light. 
 				</div>
 			</div>
 
@@ -53,7 +54,7 @@ get_header(); ?>
 				<i class="fa fa-cogs fa-5x featureIcon" aria-hidden="true"></i>
 				<h2 class="featureLabel">RESOURCES</h2>
 				<div class="featureText">
-					RCSF holds a wealth of information to help aid charter schools in rural communities with resources such as monthly discussion topics, featured articles and more! 
+					RCSC holds a wealth of information to help aid charter schools in rural communities with resources such as monthly discussion topics, featured articles and more! 
 				</div>
 			</div>
 		</div>
@@ -124,10 +125,26 @@ get_header(); ?>
 
 <hr>
 
+<!--.resourcesLinkRow-->
+<div class="row">
+	<div class="col-xs-12 col-sm-12 resourcesRow">
+		<div class="resourcesText">
+			<h2>Improving awareness and understanding of rural charters schools and their role within America is essential. We want to collect and display this information by providing links to articles and sources that address the challenges these schools face. This complilation of resources brings leading information to the forefront and opens accessiblity to everyone. Check out the resources now! </h2>
+		</div>
+		<div class="resourcesButton col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
+			<a class="resourcesLink" href="/resources">CLICK HERE TO SEE RESOURCES</a>
+		</div>
+	</div>
+</div>
+
+<hr>
+
 <!--.testimonialRow-->
 <div class="row">
 	<div class="col-xs-12 col-sm-12 testimonialRow">
-		THIS IS THERE THE TESTIMONIAL WILL GO AND BE PLACED
+		<div class="testimonialText col-sm-12 col-md-8 col-md-offset-2">
+			<i>The RCSC is a great resource for information and discussion to help find new solutions to age old problems. With a little help from you, we can all create something that helps our those that need it.</i>
+		</div>
 	</div>
 </div>
 <?php get_footer(); ?>

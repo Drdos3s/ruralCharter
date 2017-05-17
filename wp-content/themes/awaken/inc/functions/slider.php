@@ -18,8 +18,8 @@ if ( !function_exists( 'awaken_featured_posts' ) ) :
         
         ?>
 
-        <div class="awaken-featured-container">
-            <div class="awaken-featured-slider">
+        <div class="row awaken-featured-container">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 awaken-featured-slider">
                 <section class="slider">
                     <div class="flexslider">
                         <ul class="slides">
@@ -90,12 +90,12 @@ if ( !function_exists( 'awaken_featured_posts' ) ) :
                                 $featured_image_url = get_template_directory_uri() . '/images/featured.jpg';
                             }
                         ?>                    
-                        <div class="afpi-holder" style="background: url(<?php echo $featured_image_url; ?>);">
+                        <!--<div class="afpi-holder" style="background: url(<?php echo $featured_image_url; ?>);">
                             <div class="afp-content">
                                 <div class="afp-title">
                                     <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
                                 </div>
-                            </div><!-- .afp-content -->
+                            </div><!-- .afp-content
                         </div><!-- .afpi-holder -->
                     </div><!-- .afp -->
 
