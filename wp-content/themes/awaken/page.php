@@ -20,7 +20,6 @@ get_header(); ?>
 <div class="col-xs-12 col-sm-12 col-md-8 <?php echo $rtl ?>">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			this is where this is working
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'content', 'page' ); ?>

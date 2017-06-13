@@ -47,13 +47,13 @@ Awaken is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic,
 .featureTile{
   background-color: #232323;
   text-align: center;
-  min-height: 340px;
+  min-height: 613px;
   margin-bottom: 20px;
 }
 
 .featureIcon{
   color: #ffffff;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .featureText, .featureLabel{
@@ -95,7 +95,78 @@ Awaken is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic,
 .flex-direction-nav a{
   color: #ED472F !important;
 }
---------------------------------------------------------------*/
+
+.featureReply #reply-title, .featureReply .comment-form-url{
+  display: none;
+}
+
+.featureReply #respond {
+    padding: 5px;
+    background-color: #232323;
+    margin: 5px 0px;
+}
+
+.featureReply #commentform input, .featureReply #commentform textarea {
+  width: 90%;
+  border-radius: 2px;
+}
+
+.featureReply #commentform .comment-form-email{
+  padding-bottom: 10px;
+}
+
+.featureReply #commentform textarea{
+  height: 100px;
+}
+
+.featureReply #commentform label{
+  color: #ffffff;
+  padding: 3px;
+}
+
+.featureReply #commentform p{
+  margin-bottom: 5px;
+}
+
+.featureLink{
+  background-color: #fa5742;
+  height: 35px;
+  margin-top: 111px;
+  border-radius: 2px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featureLink:hover{
+  background-color: #555;
+}
+
+.featureLink a{
+  color: #ffffff;
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-top: 7px;
+}
+
+.featureLink a:hover, .featureLink a:visited {
+  color:#fff;
+}
+
+.featureText{
+  min-height: 75px;
+}
+
+.noComment{
+  min-height: 250px;
+  padding-bottom: 30px;
+}
+
+.page-entry-header{
+  margin-top: 1.5rem;
+}
+
+/*--------------------------------------------------------------*/
 /*--------------------------------------------------------------
 1.0 - Reset
 --------------------------------------------------------------*/

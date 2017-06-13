@@ -18,9 +18,8 @@ get_header(); ?>
 <div class="row">
 	<div class="col-xs-12 col-sm-12">
 		<h1 class="firstRowHeader">WELCOME TO THE RURAL CHARTER SCHOOL COLLABORATIVE!</h1>
-		<p class="firstRowText">Throughout 2016, there has been a series of discussions with rural charter schools and support organizations who identified a number of challenges facing charters in rural communities.  While participants identified a number of consistent, substantive challenges, it was also clear that any effort to address those challenges had to begin by improving communications about and among rural charter schools.  To that end, a variety of organizations have committed to work together as the Rural Charter Schools Collaborative, and we invite you and your school to learn more about our work.</p>
+		<p class="firstRowText">Over the past year, the organizations involved in the Rural Charter Schools Collaborative have heard a lot about the challenges facing rural charter schools.  It quickly became clear that addressing those challenges starts with improving communications about and among rural charter schools.  The result is the Rural Charter Schools Collaborative, and we invite you and your school to learn more about its launch.</p>
 	</div>
-
 </div>
 
 <hr>
@@ -43,8 +42,11 @@ get_header(); ?>
 			<div class="col-xs-12 col-md-10 col-md-offset-2 featureTile">
 				<i class="fa fa-handshake-o fa-5x featureIcon" aria-hidden="true"></i>
 				<h2 class="featureLabel">PARTICIPATE</h2>
-				<div class="featureText">
-					The Rural Charter School Collaborative includes monthly topic-based discussions.  We invite schools and school leaders to participate in the discussion to help bring new solutions to light. 
+				<div class="featureText noComment">
+					This collaborative effort is designed to support school collaboration and networking.  We welcome your participation in whatever way works for you: via webinars, structured resource sharing, regional gatherings etc. 
+				</div>
+				<div class="featureLink col-sm-12">
+					<a href="<?php echo get_page_link( get_page_by_title('Projects')->ID ); ?>">SEE MORE</a>
 				</div>
 			</div>
 
@@ -53,8 +55,11 @@ get_header(); ?>
 			<div class="col-xs-12 col-md-10 col-md-offset-1 featureTile">
 				<i class="fa fa-cogs fa-5x featureIcon" aria-hidden="true"></i>
 				<h2 class="featureLabel">RESOURCES</h2>
-				<div class="featureText">
-					RCSC holds a wealth of information to help aid charter schools in rural communities with resources such as monthly discussion topics, featured articles and more! 
+				<div class="featureText noComment">
+					The RCSC site will continue to collect and share resources of particular interest and value to rural charter schools. The more feedback we receive from schools about existing or missing information, the more refined the resource collection can become. 
+				</div>
+				<div class="featureLink">
+					<a href="<?php echo get_page_link( get_page_by_title('Resources')->ID ); ?>">SEE MORE</a>
 				</div>
 			</div>
 		</div>
@@ -62,8 +67,27 @@ get_header(); ?>
 			<div class="col-xs-12 col-md-10  featureTile">
 				<i class="fa fa-connectdevelop fa-5x featureIcon" aria-hidden="true"></i>
 				<h2 class="featureLabel">INFORM</h2>
+				<?php
+					//Define post to be displayed under Inform tab on home page with comment section on it for user input 
+					//Need to install plugin to allow the post ID's to be shown without doing it through the code
+					$post_id = 57;
+					$queried_post = get_post($post_id);
+				?>
+				<?php //echo $queried_post->post_title; ?>
+					<?php //echo $queried_post->post_content; 
+				?>
+
 				<div class="featureText">
-					The Rural Charter School Forum is successful because of your words. Tell us your story today and help mold the discussion that benefits people just like you! 
+					<?php //echo $queried_post->post_title; ?> 
+					We want to hear form you! In your opinion, what role do charter schools take in rural communities?
+				</div>
+
+				<div class="featureReply">
+					<?php comment_form(array(
+										'title_reply' => '',
+										'comment_notes_before' => '',
+										'label_submit' => 'SEND' 
+										), $post_id); ?>
 				</div>
 			</div>
 		</div>
